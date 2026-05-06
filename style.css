@@ -2,17 +2,17 @@
 @import url("./styles/2-header.css");
 @import url("./styles/3-main.css");
 @import url("./styles/4-about.css");
-/* @import url("./styles/5-html-css.css"); */
-/* @import url("./styles/6-curriculum.css"); */
-/* @import url("./styles/7-contact.css"); */
-/* @import url("./styles/8-footer.css"); */
+@import url("./styles/5-hero.css");
+@import url("./styles/6-whatsapp.css");
+@import url("./styles/7-contact.css");
+@import url("./styles/8-footer.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap");
 
 /* ===== 변수 구간 ===== */
 :root {
-  --color-main: #00aeff;
+  --color-main: #2e6884;
   --color-sub: #00a200;
   --color-dark: #2f4858;
   --color-emph: #f10f5f;

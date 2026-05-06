@@ -1,0 +1,18 @@
+.footer-final {
+  background-color: #333; /* 어두운 회색으로 무게감 주기 */
+  color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  opacity: 0.8;
+}
+
+/* 저작권 문구 강조 */
+.footer-final p:first-child {
+  font-weight: bold;
+  opacity: 1;
+}

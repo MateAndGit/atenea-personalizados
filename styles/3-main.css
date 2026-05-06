@@ -13,11 +13,3 @@
   font-weight: bold;
   color: var(--color-text);
 }
-
-/* 데스크탑 */
-/* @media (min-width: 769px) {
-  main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-} */

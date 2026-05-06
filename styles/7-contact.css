@@ -1,0 +1,131 @@
+/* 연락처 섹션 전체 */
+.contact-section {
+  padding: 80px 20px;
+  background-color: #fcfcfc;
+}
+
+.contact-container {
+  display: flex;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 40px;
+  align-items: center;
+}
+
+.info-box {
+  flex: 1;
+  min-width: 300px;
+}
+
+.info-box h2 {
+  color: #00aeff;
+  font-size: 2.2rem;
+  margin-bottom: 25px;
+}
+
+.address {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.hours h3 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.hours p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* 버튼 그룹 */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn-map {
+  background-color: #00aeff;
+  color: white;
+}
+.btn-insta {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* 지도 박스 */
+.map-box {
+  flex: 1.2;
+  height: 400px;
+}
+.map-box iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: none;
+}
+
+/* WhatsApp 플로팅 버튼 */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  text-decoration: none;
+}
+
+/* 반응형 */
+@media (max-width: 850px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .button-group {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .button-group {
+    flex-direction: column;
+  }
+}

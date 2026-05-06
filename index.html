@@ -1,20 +1,18 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Atenea.personalizados</title>
+    <title>Atenea Personalizados</title>
     <link rel="shortcut icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <section class="intro">
-      <div class="intro__dark">
-        <div class="intro__type">
-          <div><span aria-hidden="true">🎁</span> Regalos</div>
-          <div>personalizados<span class="underscore">💝</span></div>
-        </div>
-      </div>
       <div class="intro__tilt"></div>
       <div class="intro__tilt--flip"></div>
     </section>
@@ -22,38 +20,21 @@
     <header class="header">
       <h1>
         <a class="header__homelink" href="#">
-          <img class="header__logo" src="./images/logo.png" alt="홈으로" />
+          <p>ATENEA</p>
         </a>
       </h1>
-      <input class="header__menu-btn" type="checkbox" />
+      <input class="header__menu-btn" type="checkbox" id="menu-btn" />
       <nav class="header__nav">
         <ul>
-          <li class="header__nav-item">
-            <a href="#about">얄코강좌는</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#html">HTML</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#css">CSS</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#curriculum">커리큘럼</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#contact">문의하기</a>
-          </li>
+          <li class="header__nav-item"><a href="#about">Nosotros</a></li>
+          <li class="header__nav-item"><a href="#products">Productos</a></li>
+          <li class="header__nav-item"><a href="#location">Ubicación</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section id="about" class="section">
-        <header class="section__header">
-          <strong class="section__tag"> about </strong>
-          <h1 class="section__title">얄코강좌는</h1>
-        </header>
-
         <div class="carousel-container">
           <div class="carousel-slide">
             <img src="images/about_1.png" class="origin" alt="Slide 1" />
@@ -63,7 +44,166 @@
           </div>
         </div>
       </section>
+
+      <section id="products" class="hero">
+        <header class="hero__header">
+          <strong class="hero__tag"
+            >¡Llevá tu diseño favorito a todas partes!</strong
+          >
+          <h1 class="hero__title">
+            Regalos personalizados, sublimación y papelería creativa en
+            Hernandarias.
+          </h1>
+        </header>
+        <br />
+        <div class="card-wrapper">
+          <div
+            class="card-container"
+            onclick="this.classList.toggle('flipped')"
+          >
+            <div class="card">
+              <div class="front">
+                <h3>Tazas ☕</h3>
+                <span class="click-hint">Tocá para ver fotos 👇</span>
+              </div>
+              <div class="back"><img src="images/cup.png" alt="Cup" /></div>
+            </div>
+          </div>
+
+          <div
+            class="card-container"
+            onclick="this.classList.toggle('flipped')"
+          >
+            <div class="card">
+              <div class="front">
+                <h3>Remeras 👕</h3>
+                <span class="click-hint">Tocá para ver fotos 👇</span>
+              </div>
+              <div class="back">
+                <img src="images/remeras.png" alt="Remeras" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-container"
+            onclick="this.classList.toggle('flipped')"
+          >
+            <div class="card">
+              <div class="front">
+                <h3>Agendas 📒</h3>
+                <span class="click-hint">Tocá para ver fotos 👇</span>
+              </div>
+              <div class="back">
+                <img src="images/agendas.png" alt="Agendas" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-container"
+            onclick="this.classList.toggle('flipped')"
+          >
+            <div class="card">
+              <div class="front">
+                <h3>Stickers ✨</h3>
+                <span class="click-hint">Tocá para ver fotos 👇</span>
+              </div>
+              <div class="back">
+                <img src="images/stickers.png" alt="Stickers" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-container"
+            onclick="this.classList.toggle('flipped')"
+          >
+            <div class="card">
+              <div class="front">
+                <h3>Accesorios 💍</h3>
+                <span class="click-hint">Tocá para ver fotos 👇</span>
+              </div>
+              <div class="back">
+                <img src="images/accesorios.png" alt="Accesorios" />
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card-container"
+            onclick="this.classList.toggle('flipped')"
+          >
+            <div class="card">
+              <div class="front">
+                <h3>Regalos 🎁</h3>
+                <span class="click-hint">Tocá para ver fotos 👇</span>
+              </div>
+              <div class="back"><img src="images/gift.png" alt="Gift" /></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="location" class="contact-section">
+        <div class="contact-container">
+          <div class="info-box">
+            <h2>📍 Nuestra Ubicación</h2>
+            <p class="address">
+              <strong>Eva Perón 126</strong><br />
+              Hernandarias, Entre Ríos, Argentina (CP 3127)
+            </p>
+
+            <div class="button-group" id="contact">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Eva+Peron+126+Hernandarias"
+                class="btn btn-map"
+                target="_blank"
+              >
+                Ver en Google Maps
+              </a>
+              <a
+                href="https://www.instagram.com/atenea.personalizados"
+                class="btn btn-insta"
+                target="_blank"
+              >
+                Seguinos en Instagram 📸
+              </a>
+            </div>
+          </div>
+
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3411.599307260129!2d-59.98926319999999!3d-31.231828800000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b49afa5b52757f%3A0x542aa0cfc9a73d61!2sEva%20Per%C3%B3n%20126%2C%20E3127%20Villa%20Hernandarias%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1778093337517!5m2!1ses-419!2sar"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer-final">
+      <div class="footer-content">
+        <p>© 2026 Atenea Personalizados. Todos los derechos reservados.</p>
+        <p>Hernandarias, Entre Ríos, Argentina 🇦🇷</p>
+      </div>
+    </footer>
+
+    <a
+      href="https://wa.me/5493435048275?text=Hola!%20Quiero%20consultar%20por%20un%20diseño%20personalizado."
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="tooltip">¿Consultas? 💬</span>
+    </a>
+
     <script src="script.js"></script>
   </body>
 </html>

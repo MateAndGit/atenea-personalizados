@@ -1,8 +1,6 @@
 .header {
   display: flex;
   position: sticky;
-
-  /* 스크롤업되는 컨텐츠 위로 올라오도록 */
   z-index: 2;
 
   top: 0;
@@ -20,6 +18,10 @@
   height: var(--height-toolbar);
   line-height: var(--height-toolbar);
   cursor: pointer;
+}
+
+.header__homelink p {
+  font-size: 30px;
 }
 .header__logo {
   height: 48px;
