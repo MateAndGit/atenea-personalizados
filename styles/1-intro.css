@@ -21,14 +21,18 @@
 }
 
 /* 모바일 */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .intro {
-    height: 100vh;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center 20% !important;
+    height: 300px !important;
+    padding-top: 20px;
+    background-color: white;
   }
-  .intro__type {
-    margin-top: 36vh;
-    flex-direction: column;
-    text-align: left;
+
+  [class^="intro__tilt"] {
+    height: 15% !important;
   }
 }
 
