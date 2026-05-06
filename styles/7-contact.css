@@ -8,7 +8,7 @@
   display: flex;
   max-width: 1100px;
   margin: 0 auto;
-  gap: 40px;
+  gap: 20px;
   align-items: center;
 }
 
@@ -93,39 +93,42 @@
   border: none;
 }
 
-/* WhatsApp 플로팅 버튼 */
-.whatsapp-float {
-  position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 30px;
-  right: 30px;
-  background-color: #25d366;
-  color: white;
-  border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
-  z-index: 9999;
-  text-decoration: none;
-}
-
 /* 반응형 */
 @media (max-width: 850px) {
   .contact-container {
     flex-direction: column;
     text-align: center;
+    gap: 30px;
   }
+
+  .info-box {
+    width: 100%;
+    min-width: unset;
+  }
+
   .button-group {
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+  }
+
+  .map-box {
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 500px) {
-  .button-group {
-    flex-direction: column;
+@media (max-width: 450px) {
+  .btn,
+  .map-box {
+    max-width: 100%;
   }
 }
